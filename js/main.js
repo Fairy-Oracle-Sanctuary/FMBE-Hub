@@ -708,6 +708,268 @@ const languageNames = {
 // Current locale
 let currentLocale = 'en';
 
+const cardIcons = {
+  code: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',
+  bars: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>',
+  monitor: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',
+  cube: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>',
+  book: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>',
+  file: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>',
+  search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>'
+};
+
+const cardArrowIcon = '<svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>';
+
+const cardSections = [
+  {
+    containerId: 'toolsCards',
+    cards: [
+      {
+        href: 'https://bb-cvt-fmbe.ora-san.org/',
+        iconColor: 'blue',
+        icon: 'code',
+        titleKey: 'tools.bfConverter.title',
+        titleText: 'BF Converter',
+        descKey: 'tools.bfConverter.desc',
+        descText: 'BB-CVT-FMBE — Data format converter for FMBE',
+        tags: [
+          { i18nKey: 'tools.bfConverter.tag1', text: 'Converter' },
+          { i18nKey: 'tools.bfConverter.tag2', text: 'China', flagCode: 'cn', flagAlt: 'CN' }
+        ]
+      },
+      {
+        href: 'https://jannisx11.github.io/molang-grapher/',
+        iconColor: 'purple',
+        icon: 'bars',
+        titleText: 'Molang Grapher',
+        descKey: 'tools.molangGrapher.desc',
+        descText: 'Molang math function visualizer, real-time preview of math expressions',
+        tags: [
+          { text: 'math' },
+          { i18nKey: 'tools.molangGrapher.tag2', text: 'Visualizer' }
+        ]
+      }
+    ]
+  },
+  {
+    containerId: 'advancedSimCards',
+    cards: [
+      {
+        href: 'https://ex-fmbe-simulator.ora-san.org/',
+        iconColor: 'green',
+        icon: 'monitor',
+        titleKey: 'simulators.multiBlock.title',
+        titleText: 'Multi-block Sim',
+        titleFlagCode: 'cn',
+        titleFlagAlt: 'CN',
+        descKey: 'simulators.multiBlock.desc',
+        descText: 'Auto-generate commands, supports import & simple expressions',
+        tags: [
+          { i18nKey: 'simulators.multiBlock.tag1', text: 'Auto-gen' },
+          { i18nKey: 'simulators.multiBlock.tag2', text: 'Import' },
+          { i18nKey: 'simulators.multiBlock.tag3', text: 'Expression' }
+        ]
+      },
+      {
+        href: 'https://www.desmos.com/3d/mzzzuxssx7?lang=zh-CN',
+        iconColor: 'green',
+        icon: 'cube',
+        titleText: 'Desmos 3D',
+        titleFlagCode: 'jp',
+        titleFlagAlt: 'JP',
+        descKey: 'simulators.desmos3dJP1.desc',
+        descText: 'EX/AD Edition online 3D graph simulation',
+        tags: [{ text: 'Desmos' }, { text: '3D' }]
+      },
+      {
+        href: 'https://www.desmos.com/3d/nwk5yzcmyv',
+        iconColor: 'green',
+        icon: 'cube',
+        titleText: 'Desmos 3D',
+        titleFlagCode: 'cn',
+        titleFlagAlt: 'CN',
+        descKey: 'simulators.desmos3dCN1.desc',
+        descText: 'Multi-block Sim — Advanced Edition',
+        tags: [{ text: 'Desmos' }, { text: '3D' }]
+      },
+      {
+        href: 'https://www.desmos.com/3d/b4gk1elge0',
+        iconColor: 'green',
+        icon: 'cube',
+        titleText: 'Desmos 3D',
+        titleFlagCode: 'cn',
+        titleFlagAlt: 'CN',
+        descKey: 'simulators.desmos3dCN2.desc',
+        descText: 'Multi-block Sim — Advanced Edition (Alternative)',
+        tags: [{ text: 'Desmos' }, { text: '3D' }]
+      }
+    ]
+  },
+  {
+    containerId: 'basicSimCards',
+    cards: [
+      {
+        href: 'https://szea-ll14.github.io/fmbeSim/',
+        iconColor: 'orange',
+        icon: 'monitor',
+        titleText: 'fmbeSim',
+        titleFlagCode: 'jp',
+        titleFlagAlt: 'JP',
+        descKey: 'simulators.fmbeSim.desc',
+        descText: 'Auto-generate assignment commands',
+        tags: [
+          { i18nKey: 'simulators.fmbeSim.tag1', text: 'Auto-gen' },
+          { i18nKey: 'simulators.fmbeSim.tag2', text: 'Assignment' }
+        ]
+      },
+      {
+        href: 'https://www.desmos.com/3d/kebg0cn49k?lang=zh-CN',
+        iconColor: 'orange',
+        icon: 'cube',
+        titleText: 'Desmos 3D',
+        titleFlagCode: 'jp',
+        titleFlagAlt: 'JP',
+        descKey: 'simulators.desmos3dJP2.desc',
+        descText: 'Basic Edition online 3D graph simulation',
+        tags: [{ text: 'Desmos' }, { text: '3D' }]
+      }
+    ]
+  },
+  {
+    containerId: 'dualSimCards',
+    cards: [
+      {
+        href: 'https://allah-ethan.github.io/Basic-Edition-FMBE-simulator/',
+        iconColor: 'teal',
+        icon: 'monitor',
+        titleText: 'Basic Edition FMBE Simulator',
+        titleFlagCode: 'cn',
+        titleFlagAlt: 'CN',
+        descKey: 'simulators.basicSim.desc',
+        descText: 'FMBE simulator supporting both editions',
+        tags: [
+          { i18nKey: 'simulators.basicSim.tag1', text: 'Dual' },
+          { i18nKey: 'simulators.basicSim.tag2', text: 'Simulator' }
+        ]
+      }
+    ]
+  },
+  {
+    containerId: 'docsCards',
+    cards: [
+      {
+        href: 'https://wiki.bedrock.dev/commands/display-entities.html',
+        iconColor: 'red',
+        icon: 'book',
+        titleText: 'FMBE Wiki',
+        descKey: 'docs.fmbeWiki.desc',
+        descText: 'Bedrock Dev — Display Entities command reference',
+        tags: [{ text: 'Wiki' }, { i18nKey: 'docs.fmbeWiki.tag2', text: 'Core' }]
+      },
+      {
+        href: 'https://bedrock.dev/docs/stable/Molang',
+        iconColor: 'blue',
+        icon: 'file',
+        titleKey: 'docs.molangDoc1.title',
+        titleText: 'Bedrock Molang Docs (I)',
+        descKey: 'docs.molangDoc1.desc',
+        descText: 'bedrock.dev — Stable Molang official docs',
+        tags: [{ text: 'Molang' }, { i18nKey: 'docs.molangDoc1.tag2', text: 'Official' }]
+      },
+      {
+        href: 'https://wiki.bedrock.dev/concepts/molang',
+        iconColor: 'blue',
+        icon: 'file',
+        titleKey: 'docs.molangDoc2.title',
+        titleText: 'Bedrock Molang Docs (II)',
+        descKey: 'docs.molangDoc2.desc',
+        descText: 'wiki.bedrock.dev — Molang concepts explained',
+        tags: [{ text: 'Molang' }, { i18nKey: 'docs.molangDoc2.tag2', text: 'Concepts' }]
+      },
+      {
+        href: 'https://wiki.mcbe-dev.net/p/Molang',
+        iconColor: 'blue',
+        icon: 'file',
+        titleKey: 'docs.molangDoc3.title',
+        titleText: 'Bedrock Molang Docs (III)',
+        descKey: 'docs.molangDoc3.desc',
+        descText: 'mcbe-dev.net — Molang query function list',
+        tags: [{ text: 'Molang' }, { i18nKey: 'docs.molangDoc3.tag2', text: 'Query' }]
+      },
+      {
+        href: 'https://wiki.bedev.cn/page/Molang',
+        iconColor: 'blue',
+        icon: 'file',
+        titleText: 'bedev.cn Molang',
+        descKey: 'docs.bedevMolang.desc',
+        descText: 'bedev.cn — Molang query function list (Chinese mirror)',
+        tags: [{ text: 'Molang' }, { i18nKey: 'docs.bedevMolang.tag2', text: 'Chinese' }]
+      },
+      {
+        href: 'https://learn.microsoft.com/zh-cn/minecraft/creator/reference/content/molangreference/examples/molangconcepts/queryfunctions?view=minecraft-bedrock-stable',
+        iconColor: 'purple',
+        icon: 'search',
+        titleKey: 'docs.queryRef.title',
+        titleText: 'Query Function Reference',
+        descKey: 'docs.queryRef.desc',
+        descText: 'Microsoft Learn — Complete Molang Query function list',
+        tags: [
+          { text: 'Query' },
+          { i18nKey: 'docs.queryRef.tag2', text: 'Official' },
+          { i18nKey: 'docs.queryRef.tag3', text: 'Chinese' }
+        ]
+      }
+    ]
+  }
+];
+
+function createFlagHTML(code, alt) {
+  if (!code) return '';
+  const normalizedCode = code.toLowerCase();
+  const normalizedAlt = alt || code.toUpperCase();
+  return `<img class="flag-img" src="https://flagcdn.com/${normalizedCode}.svg" alt="${normalizedAlt}">`;
+}
+
+function createTagHTML(tag) {
+  const textPart = tag.i18nKey
+    ? `<span data-i18n="${tag.i18nKey}">${tag.text}</span>`
+    : tag.text;
+  return `<span class="tag">${createFlagHTML(tag.flagCode, tag.flagAlt)}${tag.flagCode ? ' ' : ''}${textPart}</span>`;
+}
+
+function createCardHTML(card) {
+  const titlePart = card.titleKey
+    ? `<span data-i18n="${card.titleKey}">${card.titleText}</span>`
+    : card.titleText;
+
+  const descPart = card.descKey
+    ? `<p class="card-desc" data-i18n="${card.descKey}">${card.descText}</p>`
+    : `<p class="card-desc">${card.descText}</p>`;
+
+  const tagsHTML = card.tags.map(createTagHTML).join('');
+  const titleFlagHTML = createFlagHTML(card.titleFlagCode, card.titleFlagAlt);
+
+  return `
+    <a href="${card.href}" target="_blank" class="card">
+      <div class="card-icon ${card.iconColor}">${cardIcons[card.icon]}</div>
+      <div class="card-body">
+        <h3 class="card-title">${titlePart}${titleFlagHTML ? ` ${titleFlagHTML}` : ''}</h3>
+        ${descPart}
+        <div class="card-tags">${tagsHTML}</div>
+      </div>
+      ${cardArrowIcon}
+    </a>
+  `;
+}
+
+function renderCards() {
+  cardSections.forEach(section => {
+    const container = document.getElementById(section.containerId);
+    if (!container) return;
+    container.innerHTML = section.cards.map(createCardHTML).join('');
+  });
+}
+
 // Update all translations
 function updateTranslations() {
   localStorage.setItem('locale', currentLocale);
@@ -750,6 +1012,8 @@ function updateTranslations() {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
+  renderCards();
+
   // Language switcher
   const langBtn = document.getElementById('langBtn');
   const langDropdown = document.getElementById('langDropdown');

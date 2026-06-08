@@ -100,52 +100,7 @@
           <h2 class="section-title" data-i18n="tools.title">🛠️ Tools</h2>
           <p class="section-subtitle" data-i18n="tools.subtitle">Converters & utilities to boost your FMBE development efficiency</p>
         </div>
-        <div class="cards-grid">
-          <a href="https://fairy-oracle-sanctuary.github.io/BB-CVT-FMBE/" target="_blank" class="card">
-            <div class="card-icon blue">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="16 18 22 12 16 6"/>
-                <polyline points="8 6 2 12 8 18"/>
-              </svg>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title" data-i18n="tools.bfConverter.title">BF Converter</h3>
-              <p class="card-desc" data-i18n="tools.bfConverter.desc">BB-CVT-FMBE — Data format converter for FMBE</p>
-              <div class="card-tags">
-                <span class="tag" data-i18n="tools.bfConverter.tag1">Converter</span>
-                <span class="tag"><img class="flag-img" src="https://flagcdn.com/cn.svg" alt="CN"> <span data-i18n="tools.bfConverter.tag2">China</span></span>
-              </div>
-            </div>
-            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-              <polyline points="15 3 21 3 21 9"/>
-              <line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
-          </a>
-
-          <a href="https://jannisx11.github.io/molang-grapher/" target="_blank" class="card">
-            <div class="card-icon purple">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="18" y1="20" x2="18" y2="10"/>
-                <line x1="12" y1="20" x2="12" y2="4"/>
-                <line x1="6" y1="20" x2="6" y2="14"/>
-              </svg>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Molang Grapher</h3>
-              <p class="card-desc" data-i18n="tools.molangGrapher.desc">Molang math function visualizer, real-time preview of math expressions</p>
-              <div class="card-tags">
-                <span class="tag">math</span>
-                <span class="tag" data-i18n="tools.molangGrapher.tag2">Visualizer</span>
-              </div>
-            </div>
-            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-              <polyline points="15 3 21 3 21 9"/>
-              <line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
-          </a>
-        </div>
+        <div class="cards-grid" id="toolsCards"></div>
       </div>
     </section>
 
@@ -163,94 +118,7 @@
             <span class="edition-badge advanced" data-i18n="simulators.advancedBadge">Advanced</span>
             <span data-i18n="simulators.advancedLabel">EX / AD Edition</span>
           </h3>
-          <div class="cards-grid">
-            <a href="https://fairy-oracle-sanctuary.github.io/EX-FMBE-simulator/" target="_blank" class="card">
-              <div class="card-icon green">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                  <line x1="8" y1="21" x2="16" y2="21"/>
-                  <line x1="12" y1="17" x2="12" y2="21"/>
-                </svg>
-              </div>
-              <div class="card-body">
-                <h3 class="card-title"><span data-i18n="simulators.multiBlock.title">Multi-block Sim</span> <img class="flag-img" src="https://flagcdn.com/cn.svg" alt="CN"></h3>
-                <p class="card-desc" data-i18n="simulators.multiBlock.desc">Auto-generate commands, supports import & simple expressions</p>
-                <div class="card-tags">
-                  <span class="tag" data-i18n="simulators.multiBlock.tag1">Auto-gen</span>
-                  <span class="tag" data-i18n="simulators.multiBlock.tag2">Import</span>
-                  <span class="tag" data-i18n="simulators.multiBlock.tag3">Expression</span>
-                </div>
-              </div>
-              <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
-            </a>
-
-            <a href="https://www.desmos.com/3d/mzzzuxssx7?lang=zh-CN" target="_blank" class="card">
-              <div class="card-icon green">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                </svg>
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Desmos 3D <img class="flag-img" src="https://flagcdn.com/jp.svg" alt="JP"></h3>
-                <p class="card-desc" data-i18n="simulators.desmos3dJP1.desc">EX/AD Edition online 3D graph simulation</p>
-                <div class="card-tags">
-                  <span class="tag">Desmos</span>
-                  <span class="tag">3D</span>
-                </div>
-              </div>
-              <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
-            </a>
-
-            <a href="https://www.desmos.com/3d/nwk5yzcmyv" target="_blank" class="card">
-              <div class="card-icon green">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                </svg>
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Desmos 3D <img class="flag-img" src="https://flagcdn.com/cn.svg" alt="CN"></h3>
-                <p class="card-desc" data-i18n="simulators.desmos3dCN1.desc">Multi-block Sim — Advanced Edition</p>
-                <div class="card-tags">
-                  <span class="tag">Desmos</span>
-                  <span class="tag">3D</span>
-                </div>
-              </div>
-              <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
-            </a>
-
-            <a href="https://www.desmos.com/3d/b4gk1elge0" target="_blank" class="card">
-              <div class="card-icon green">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                </svg>
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Desmos 3D <img class="flag-img" src="https://flagcdn.com/cn.svg" alt="CN"></h3>
-                <p class="card-desc" data-i18n="simulators.desmos3dCN2.desc">Multi-block Sim — Advanced Edition (Alternative)</p>
-                <div class="card-tags">
-                  <span class="tag">Desmos</span>
-                  <span class="tag">3D</span>
-                </div>
-              </div>
-              <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
-            </a>
-          </div>
+          <div class="cards-grid" id="advancedSimCards"></div>
         </div>
 
         <!-- Normal Edition -->
@@ -259,51 +127,7 @@
             <span class="edition-badge normal" data-i18n="simulators.normalBadge">Basic</span>
             <span data-i18n="simulators.normalLabel">Basic Edition</span>
           </h3>
-          <div class="cards-grid">
-            <a href="https://szea-ll14.github.io/fmbeSim/" target="_blank" class="card">
-              <div class="card-icon orange">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                  <line x1="8" y1="21" x2="16" y2="21"/>
-                  <line x1="12" y1="17" x2="12" y2="21"/>
-                </svg>
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">fmbeSim <img class="flag-img" src="https://flagcdn.com/jp.svg" alt="JP"></h3>
-                <p class="card-desc" data-i18n="simulators.fmbeSim.desc">Auto-generate assignment commands</p>
-                <div class="card-tags">
-                  <span class="tag" data-i18n="simulators.fmbeSim.tag1">Auto-gen</span>
-                  <span class="tag" data-i18n="simulators.fmbeSim.tag2">Assignment</span>
-                </div>
-              </div>
-              <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
-            </a>
-
-            <a href="https://www.desmos.com/3d/kebg0cn49k?lang=zh-CN" target="_blank" class="card">
-              <div class="card-icon orange">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                </svg>
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Desmos 3D <img class="flag-img" src="https://flagcdn.com/jp.svg" alt="JP"></h3>
-                <p class="card-desc" data-i18n="simulators.desmos3dJP2.desc">Basic Edition online 3D graph simulation</p>
-                <div class="card-tags">
-                  <span class="tag">Desmos</span>
-                  <span class="tag">3D</span>
-                </div>
-              </div>
-              <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
-            </a>
-          </div>
+          <div class="cards-grid" id="basicSimCards"></div>
         </div>
 
         <!-- Dual Edition -->
@@ -312,30 +136,7 @@
             <span class="edition-badge dual" data-i18n="simulators.dualBadge">Dual</span>
             <span data-i18n="simulators.dualLabel">Dual Edition</span>
           </h3>
-          <div class="cards-grid">
-            <a href="https://allah-ethan.github.io/Basic-Edition-FMBE-simulator/" target="_blank" class="card">
-              <div class="card-icon teal">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                  <line x1="8" y1="21" x2="16" y2="21"/>
-                  <line x1="12" y1="17" x2="12" y2="21"/>
-                </svg>
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Basic Edition FMBE Simulator <img class="flag-img" src="https://flagcdn.com/cn.svg" alt="CN"></h3>
-                <p class="card-desc" data-i18n="simulators.basicSim.desc">FMBE simulator supporting both editions</p>
-                <div class="card-tags">
-                  <span class="tag" data-i18n="simulators.basicSim.tag1">Dual</span>
-                  <span class="tag" data-i18n="simulators.basicSim.tag2">Simulator</span>
-                </div>
-              </div>
-              <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
-            </a>
-          </div>
+          <div class="cards-grid" id="dualSimCards"></div>
         </div>
       </div>
     </section>
@@ -347,140 +148,7 @@
           <h2 class="section-title" data-i18n="docs.title">📚 Docs & Resources</h2>
           <p class="section-subtitle" data-i18n="docs.subtitle">Molang docs, Query function references, FMBE Wiki and more learning resources</p>
         </div>
-        <div class="cards-grid">
-          <a href="https://wiki.bedrock.dev/commands/display-entities.html" target="_blank" class="card">
-            <div class="card-icon red">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-              </svg>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">FMBE Wiki</h3>
-              <p class="card-desc" data-i18n="docs.fmbeWiki.desc">Bedrock Dev — Display Entities command reference</p>
-              <div class="card-tags">
-                <span class="tag">Wiki</span>
-                <span class="tag" data-i18n="docs.fmbeWiki.tag2">Core</span>
-              </div>
-            </div>
-            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-              <polyline points="15 3 21 3 21 9"/>
-              <line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
-          </a>
-
-          <a href="https://bedrock.dev/docs/stable/Molang" target="_blank" class="card">
-            <div class="card-icon blue">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14 2 14 8 20 8"/>
-              </svg>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title" data-i18n="docs.molangDoc1.title">Bedrock Molang Docs (I)</h3>
-              <p class="card-desc" data-i18n="docs.molangDoc1.desc">bedrock.dev — Stable Molang official docs</p>
-              <div class="card-tags">
-                <span class="tag">Molang</span>
-                <span class="tag" data-i18n="docs.molangDoc1.tag2">Official</span>
-              </div>
-            </div>
-            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-              <polyline points="15 3 21 3 21 9"/>
-              <line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
-          </a>
-
-          <a href="https://wiki.bedrock.dev/concepts/molang" target="_blank" class="card">
-            <div class="card-icon blue">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14 2 14 8 20 8"/>
-              </svg>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title" data-i18n="docs.molangDoc2.title">Bedrock Molang Docs (II)</h3>
-              <p class="card-desc" data-i18n="docs.molangDoc2.desc">wiki.bedrock.dev — Molang concepts explained</p>
-              <div class="card-tags">
-                <span class="tag">Molang</span>
-                <span class="tag" data-i18n="docs.molangDoc2.tag2">Concepts</span>
-              </div>
-            </div>
-            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-              <polyline points="15 3 21 3 21 9"/>
-              <line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
-          </a>
-
-          <a href="https://wiki.mcbe-dev.net/p/Molang" target="_blank" class="card">
-            <div class="card-icon blue">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14 2 14 8 20 8"/>
-              </svg>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title" data-i18n="docs.molangDoc3.title">Bedrock Molang Docs (III)</h3>
-              <p class="card-desc" data-i18n="docs.molangDoc3.desc">mcbe-dev.net — Molang query function list</p>
-              <div class="card-tags">
-                <span class="tag">Molang</span>
-                <span class="tag" data-i18n="docs.molangDoc3.tag2">Query</span>
-              </div>
-            </div>
-            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-              <polyline points="15 3 21 3 21 9"/>
-              <line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
-          </a>
-
-          <a href="https://wiki.bedev.cn/page/Molang" target="_blank" class="card">
-            <div class="card-icon blue">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14 2 14 8 20 8"/>
-              </svg>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">bedev.cn Molang</h3>
-              <p class="card-desc" data-i18n="docs.bedevMolang.desc">bedev.cn — Molang query function list (Chinese mirror)</p>
-              <div class="card-tags">
-                <span class="tag">Molang</span>
-                <span class="tag" data-i18n="docs.bedevMolang.tag2">Chinese</span>
-              </div>
-            </div>
-            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-              <polyline points="15 3 21 3 21 9"/>
-              <line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
-          </a>
-
-          <a href="https://learn.microsoft.com/zh-cn/minecraft/creator/reference/content/molangreference/examples/molangconcepts/queryfunctions?view=minecraft-bedrock-stable" target="_blank" class="card">
-            <div class="card-icon purple">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="11" cy="11" r="8"/>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-              </svg>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title" data-i18n="docs.queryRef.title">Query Function Reference</h3>
-              <p class="card-desc" data-i18n="docs.queryRef.desc">Microsoft Learn — Complete Molang Query function list</p>
-              <div class="card-tags">
-                <span class="tag">Query</span>
-                <span class="tag" data-i18n="docs.queryRef.tag2">Official</span>
-                <span class="tag" data-i18n="docs.queryRef.tag3">Chinese</span>
-              </div>
-            </div>
-            <svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-              <polyline points="15 3 21 3 21 9"/>
-              <line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
-          </a>
-        </div>
+        <div class="cards-grid" id="docsCards"></div>
       </div>
     </section>
 
